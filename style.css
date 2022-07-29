@@ -1,0 +1,274 @@
+
+
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+.logo{
+    background-color: black;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.list{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.1rem;
+}
+.register-btn{
+    color: hsl(208deg 87% 50%);
+    border: 1px solid hsl(208deg 87% 50%);
+    padding: .7rem 2rem;
+    border-radius: 5px;
+    background:none;
+}
+.main,
+.sub-main,
+.technical{
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-size: 3rem;
+    padding: 3rem 2rem;
+}
+.para{
+    font-size: .9rem;
+    padding: 0rem 3rem 3rem 2rem;
+}
+.content{
+    width: 50%;
+}
+.main-img,
+.sub-main-img,
+.technical-img{
+    width: 50%;
+}
+.main-button{
+    margin-left: 2.5rem;
+    padding: .9rem 2rem;
+    background: 0;
+    background-image: linear-gradient(to right, hsl(200deg 91% 50%),hsl(213deg 97% 47%));
+    border: 0;
+    border-radius: 5px;
+    color: white;
+}
+.services{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding: 2rem;
+}
+.service-title{
+    width: 40%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+
+}
+.service-content{
+    width: 40%;
+    padding: 1rem 4rem;
+    font-size: .9rem;
+    line-height: 2;
+}
+.menu{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    padding: 1rem 2rem;
+}
+.menu-section{
+    padding: 1rem 2rem;
+    width: 30%;
+}
+.menu-logo{
+    padding: 1rem;
+}
+.menu-heading{
+    padding-bottom: 1rem;
+}
+.menu-para{
+    padding: 0 3rem 0 0rem;
+    font-size: .9rem;
+    color: #808080;
+}
+.plans-section{
+    background-image: linear-gradient(to right, hsl(199deg 92% 51%), hsl(215deg 96% 47%));
+}
+.plans-title{
+    text-align: center;
+    padding: 1rem;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 3rem;
+}
+.plans{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.plan{
+    background-color: #FFFFFF;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 3rem;
+    border-radius: 5px;
+}
+.plan-title{
+    padding: 1rem;
+    padding-bottom: 0;
+}
+.plan-text{
+    padding: 1rem;
+    font-size: .8rem;
+    color: #808080;
+}
+.plan > li {
+    padding: .5rem 1rem;
+    font-size: .9rem;
+}
+.fa-regular{
+    color: hsl(163deg 71% 50%);
+    padding: .3rem;
+}
+.amount{
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+span{
+    color: #808080;
+    font-weight: 500;
+}
+.cancel{
+    font-size: .9rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.choose-plan{
+    display: block;
+    margin: auto;
+    padding: .5rem 1.5rem;
+    background:none;
+    border: 1px solid hsl(209deg 98% 47%);
+    border-radius: 5px;
+    color: hsl(209deg 98% 47%);
+    font-weight: 600;
+    font-size: 1rem;
+}
+.btn{
+    background-image: linear-gradient(to right, hsl(199deg 92% 51%), hsl(215deg 96% 47%));
+    color: #FFFFFF;
+}
+.customers-review{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.customers-review:first-child{
+    background-color: hsl(0deg 0% 100%);
+}
+.customer-section{
+    padding: 2rem;
+    background-color: hsl(210deg 100% 100%);
+}
+.customer-title{
+    text-align: center;
+    padding: 1rem;
+    text-transform: capitalize;
+    font-size: 3.5rem;
+}
+.customer-para{
+    text-align: center;
+    padding: 1.5rem;
+    color: #808080;
+}
+.customer{
+    width: 30rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: hsl(0deg 0% 100%);
+}
+.customer-name{
+    display: flex;
+    align-items: center;
+    padding:1.5rem 2rem 1rem 2rem;
+}
+.review{
+    padding: 0 2rem;
+}
+.cir-img{
+    margin-right: .5rem;
+}
+.name{
+    padding: .5rem 0;
+    font-weight: 600;
+}
+
+.register-now{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-image: linear-gradient(to right, hsl(199deg 92% 51%), hsl(215deg 96% 47%));
+}
+.register{
+    width: 20rem;
+}
+.register-content{
+    width: 25rem;
+    color: #FFFFFF;   
+}
+.register-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 1.5rem;
+}
+.register-button{
+    color:white;
+    border: 1px solid #FFFFFF;
+    padding: .7rem 2rem;
+    border-radius: 5px;
+    background:none;
+}
+.register-text{
+    padding: 0 1.5rem;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+.footer-logo{
+    width: 30%;
+    padding: 1.5rem;
+}
+.footer-menu{
+    padding: 1rem;
+}
+.menu-title{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    padding: 1rem;
+}
+.footer-menu > p{
+    padding: .5rem 1rem;
+}
+.li-icon{
+    margin-bottom: .4rem;
+}
