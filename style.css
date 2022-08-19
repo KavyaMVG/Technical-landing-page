@@ -1,5 +1,3 @@
-
-
 *,
 ::after,
 ::before{
@@ -8,11 +6,15 @@
     box-sizing: border-box;
     list-style: none;
 }
+body{
+    font-family: sans-serif;
+    background-color: #fdfeff;
+}
 img{
     max-width: 100%;
 }
 .logo{
-    background-color: black;
+    height: 40px;
 }
 header{
     display: flex;
@@ -21,10 +23,14 @@ header{
     padding: 1rem 2rem;
 }
 .list{
+    text-transform: capitalize;
     display: flex;
     align-items: center;
     gap: 2rem;
     font-size: 1.1rem;
+}
+.list-items:first-child{
+    font-weight: 700;
 }
 .register-btn{
     color: hsl(208deg 87% 50%);
@@ -45,10 +51,13 @@ header{
 .title{
     font-size: 3rem;
     padding: 3rem 2rem;
+    text-transform: capitalize;
 }
 .para{
-    font-size: .9rem;
+    font-size: 1rem;
     padding: 0rem 3rem 3rem 2rem;
+    line-height: 1.75;
+    opacity: 0.5;
 }
 .content{
     width: 50%;
@@ -77,14 +86,14 @@ header{
     width: 40%;
     font-size: 2.5rem;
     font-weight: 700;
-    padding: 1rem 2rem;
-
+    text-transform: capitalize;
 }
 .service-content{
     width: 40%;
-    padding: 1rem 4rem;
+    padding: 0 4rem;
     font-size: .9rem;
     line-height: 2;
+    opacity: 0.5;
 }
 .menu{
     display: flex;
@@ -93,18 +102,22 @@ header{
     padding: 1rem 2rem;
 }
 .menu-section{
-    padding: 1rem 2rem;
-    width: 30%;
+    padding: 1rem;
+    margin: 1rem;
+    height: 300px;
+    background-color: #fff;
 }
 .menu-logo{
     padding: 1rem;
 }
 .menu-heading{
     padding-bottom: 1rem;
+    text-transform: capitalize;
+    font-size: 1.5rem;
 }
 .menu-para{
-    padding: 0 3rem 0 0rem;
-    font-size: .9rem;
+    font-size: 1rem;
+    line-height: 1.5;
     color: #808080;
 }
 .plans-section{
@@ -113,9 +126,9 @@ header{
 .plans-title{
     text-align: center;
     padding: 1rem;
-    text-align: center;
     color: #FFFFFF;
     font-size: 3rem;
+    text-transform: capitalize;
 }
 .plans{
     display: flex;
@@ -129,9 +142,23 @@ header{
     margin-bottom: 3rem;
     border-radius: 5px;
 }
+.plan:nth-child(2){
+    padding: 0;
+    padding-bottom: 1rem;
+}
+.plan-active{
+    background-color: #353535;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+.plan-active .plan-text{
+    color: #f9f2f2;
+}
 .plan-title{
+    font-size: 1.25rem;
     padding: 1rem;
     padding-bottom: 0;
+    text-transform: capitalize;
 }
 .plan-text{
     padding: 1rem;
@@ -141,6 +168,7 @@ header{
 .plan > li {
     padding: .5rem 1rem;
     font-size: .9rem;
+    text-transform: capitalize;
 }
 .fa-regular{
     color: hsl(163deg 71% 50%);
@@ -149,7 +177,9 @@ header{
 .amount{
     padding: 1rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111e45;
 }
 span{
     color: #808080;
@@ -170,6 +200,7 @@ span{
     color: hsl(209deg 98% 47%);
     font-weight: 600;
     font-size: 1rem;
+    text-transform: capitalize;
 }
 .btn{
     background-image: linear-gradient(to right, hsl(199deg 92% 51%), hsl(215deg 96% 47%));
@@ -179,13 +210,13 @@ span{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .customers-review:first-child{
     background-color: hsl(0deg 0% 100%);
 }
 .customer-section{
     padding: 2rem;
-    background-color: hsl(210deg 100% 100%);
 }
 .customer-title{
     text-align: center;
@@ -199,10 +230,15 @@ span{
     color: #808080;
 }
 .customer{
-    width: 30rem;
+    width: 45%;
     padding: 1rem;
     margin-bottom: 1rem;
-    background-color: hsl(0deg 0% 100%);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+.customer:first-child{
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 .customer-name{
     display: flex;
@@ -254,6 +290,11 @@ footer{
     justify-content: space-evenly;
     padding: 2rem;
 }
+.footer-para{
+    margin-top: 1rem;
+    line-height: 1.5;
+    opacity: 0.5;
+}
 .footer-logo{
     width: 30%;
     padding: 1.5rem;
@@ -268,6 +309,7 @@ footer{
 }
 .footer-menu > p{
     padding: .5rem 1rem;
+    opacity: 0.5;
 }
 .li-icon{
     margin-bottom: .4rem;
