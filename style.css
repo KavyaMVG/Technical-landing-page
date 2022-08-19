@@ -13,6 +13,10 @@ body{
 img{
     max-width: 100%;
 }
+.hide-for-desktop {
+    display: none;
+}
+
 .logo{
     height: 40px;
 }
@@ -100,12 +104,13 @@ header{
     align-items:center;
     justify-content:center;
     padding: 1rem 2rem;
+    flex-wrap: wrap;
 }
 .menu-section{
     padding: 1rem;
     margin: 1rem;
-    height: 300px;
     background-color: #fff;
+    width: 30%;
 }
 .menu-logo{
     padding: 1rem;
@@ -258,16 +263,13 @@ span{
 
 .register-now{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 2rem;
     background-image: linear-gradient(to right, hsl(199deg 92% 51%), hsl(215deg 96% 47%));
 }
-.register{
-    width: 20rem;
-}
+
 .register-content{
-    width: 25rem;
     color: #FFFFFF;   
 }
 .register-title{
@@ -314,3 +316,167 @@ footer{
 .li-icon{
     margin-bottom: .4rem;
 }
+
+@media only screen and (max-width:900px) {
+    .list{
+        display: none
+    }
+    .hide-for-desktop {
+        display: block;
+        cursor: pointer;
+    }
+    .hide-for-desktop div {
+        height: 3px;
+        width: 1.5rem;
+        background-color: #000;
+        margin: 5px;
+    }
+    .main{
+        padding: 2rem 1rem;
+    }
+    .main-img{
+        width: 40%;
+    }
+    .title{
+        padding: 0;
+        font-size: 2rem;
+    }
+    .para{
+        padding: 2rem 0;
+    }
+    .main-button{
+        margin:0
+    }
+    .service-title{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .service-content {
+        width: 100%;
+        padding: 0 2rem;
+    }
+    .plan{
+        margin: 1rem;
+    }
+    .plans-title {
+        font-size: 2rem;
+    }
+    .register-title {
+        font-size: 2rem;
+    }
+    .register-button{
+        padding: 0.5rem 1rem;
+        white-space: nowrap;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    .logo{
+        height: 25px;
+    }
+    header{
+        padding: 1rem;
+    }
+    .main,
+    .sub-main{
+        display: block;
+    }
+    .content{
+        width: 100%;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .main-img,
+    .sub-main-img{
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .technical{
+        display: block;
+    }
+    .main-img,
+    .sub-main-img,
+    .technical-img {
+        width: 100%;
+    }
+
+    .services{
+        display: block;
+        padding: 2rem;
+    }
+    .service-content{
+        padding: 1rem 0;
+    }
+    .service-title{
+        font-size: 1.5rem;
+    }
+    .menu{
+        display: block;
+    }
+    .menu-section{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-heading{
+        font-size: 1.25rem;
+    }
+    .plans-title{
+        font-size: 1.25rem;
+    }
+    .plans{
+        display: block;
+        padding: 1rem 0;
+    }
+    .plan-title {
+        font-size: 1.25rem;
+    }
+    .customer-title{
+        font-size: 1.5rem;
+        padding: 0;
+    }
+    .customer-para{
+        padding: 1rem 0;
+    }
+    .customers-review {
+        display: block;
+    }
+    .customer{
+        width: 100%;
+    }
+    .customer-name {
+        padding:1rem;
+    }
+    .customer-name p{
+        font-size: 0.8rem;
+    }
+    .review{
+        padding: 0 1rem;
+    }
+    .register-now{
+        display:block;    
+        padding: 1rem;
+    }
+    .register-title{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .register-text{
+        padding: 0 1rem;
+    }
+    .register{
+        margin: 1rem;
+    }
+    footer{
+        display: block;
+    }
+    .footer-logo{
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .footer-menu{
+        text-align: center;
+    }
+}
+
